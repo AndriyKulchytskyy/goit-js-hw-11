@@ -9,6 +9,27 @@
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">Search</button>
+    </form>
+    <div class="gallery">
+      <!-- Карточки изображений -->
+    </div>
+
+    <div class="wrapBtn">
+      <button type="button " class="load-more visually-hidden">
+        Load more
+      </button>
+    </div>
+
+    <script src="../node_modules/notiflix/dist/notiflix-notify-aio-3.2.5.min.js"></script>
+    <script src="./index.js" type="module"></script>
+    <!-- <include src="./partials/example.html"></include> -->
   </body>
 </html>

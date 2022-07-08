@@ -23,7 +23,7 @@ function onSearch(event) {
   page = 1;
   searchQuery = event.currentTarget.elements.searchQuery.value;
 
-  if (searchQuery === '') {
+  if (searchQuery.trim() === '') {
     Notiflix.Notify.failure('Please insert something...');
     refs.loadMoreBtn.classList.add('visually-hidden');
     return;
